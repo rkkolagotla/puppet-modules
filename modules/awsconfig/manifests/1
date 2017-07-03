@@ -1,0 +1,43 @@
+node 'edallinp01.elan.elantecs.com' inherits default {
+include tomcat
+}
+
+node 'edallinp04.elan.elantecs.com' inherits default {
+include tomcat
+include mcollective
+}
+
+node 'edallint03.elan.elantecs.com' inherits default {
+include tomcat
+include apache
+include php-git
+include ntp
+}
+
+node 'edallint04.elan.elantecs.com' inherits default {
+include tomcat
+include apache
+include php-git
+}
+
+node 'edallint99.elan.elantecs.com' inherits default {
+include tomcat
+include apache
+include php-git
+}
+
+node 'edallint16.elan.elantecs.com' inherits default {
+include tomcat
+include apache
+include php-git
+}
+
+node 'edallinp11.elan.elantecs.com' inherits default {
+include php-git
+include myfiles
+}
+
+node 'edallint13.elan.elantecs.com' inherits default {
+include tomcat
+include myfiles
+}
